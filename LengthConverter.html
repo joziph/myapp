@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Length Converter</title>
+</head>
+<script language="JavaScript">
+function Comp()
+{
+	if (frmLengthConverter.txtMeter.value == "")
+	{
+		alert ("Value in Meter is required.");
+	}
+	else
+	{
+		document.forms['frmLengthConverter'].submit();
+	}
+}
+</script>
+<body>
+<form name="frmLengthConverter" action="LengthConverterScript.php" method="get">
+<h2>Length Converter</h2>
+Second Prelim Examination
+<hr width="350" align="left">
+Enter Your Value in Meter
+<br/>
+<input type="text" name="txtMeter">
+<br/>
+<input type="button" style="width:76px;height:30px;" value="Compute" onclick="Comp()">
+<input type="reset" style="width:76px;height:30px;" value="Reset">
+
+<hr width="350" align="left">
+</form>
+<font size="1">
+Copyright &copy; 2013<br/>
+Mr. Joseph S. Joaquin<br/>
+Instructor - Web Programming
+</font>
+</body>
+</html>
